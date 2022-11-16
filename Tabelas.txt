@@ -1,0 +1,37 @@
+-> Utilizador:
+	id (int (6) , AUTO_INCREMENT, PRIMARY KEY)
+	nome (varchar (255), NOT NULL)
+	data_nascimente (DATE, NOT_NULL)
+	morada (varchar (255), NOT_NULL) -> atributo composto (rua, cp, cidade)
+	telefone (char (9), NOT_NULL) 
+	email (varchar(255), NOT_NULL) 
+	nif (int(9))
+	saldo_conta (float, NOT NULL)
+
+//permissoes: apenas os vendedores têm permissão de adicionar/remover bens e serviços 
+// apenas os vendedores podem editar feiras (possuídas pelos mesmos)
+// os clientes podem fazer compras, adicionar saldo, visitar certames
+
+
+-> Empresa:
+	id_empresa (int(6), AUTO_INCREMENT, PRIMARY_KEY, FK)
+	nome (VARCHAR(255", NOT_NULL)
+	nif (int(9), NOT_NULL)
+	morada (varchar (255), NOT_NULL) -> atributo composto (rua, cp, cidade)
+	telefone (char (9), NOT_NULL) 
+	email (varchar(255), NOT_NULL) 
+	
+
+
+-> Certame:
+	id_certame (int (6), AUTO_INCREMENT, PRIMARY_KEY, FK)
+	max_stands (int, NOT_NULL)
+	categoria (varchar(255), NOT_NULL)
+	tipo (varchar(255), NOT_NULL)
+	
+
+-> Stands:
+	id_stand (int (6), AUTO_INCREMENT, PRIMARY_KEY)
+	id_certame (int, FK)
+	id_empresa (int, FK)
+		
