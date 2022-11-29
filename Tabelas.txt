@@ -34,4 +34,7 @@
 	id_stand (int (6), AUTO_INCREMENT, PRIMARY_KEY)
 	id_certame (int, FK)
 	id_empresa (int, FK)
+
+
+	
 		
