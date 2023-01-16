@@ -1,7 +1,0 @@
-C:\Users\luis-\Desktop\Universidade\LEI\3 Ano\LI4\Projeto\FeiraFacil\FeiraFacil\bin\Debug\FeiraFacil.exe.config
-C:\Users\luis-\Desktop\Universidade\LEI\3 Ano\LI4\Projeto\FeiraFacil\FeiraFacil\bin\Debug\FeiraFacil.exe
-C:\Users\luis-\Desktop\Universidade\LEI\3 Ano\LI4\Projeto\FeiraFacil\FeiraFacil\bin\Debug\FeiraFacil.pdb
-C:\Users\luis-\Desktop\Universidade\LEI\3 Ano\LI4\Projeto\FeiraFacil\FeiraFacil\obj\Debug\FeiraFacil.csproj.AssemblyReference.cache
-C:\Users\luis-\Desktop\Universidade\LEI\3 Ano\LI4\Projeto\FeiraFacil\FeiraFacil\obj\Debug\FeiraFacil.csproj.CoreCompileInputs.cache
-C:\Users\luis-\Desktop\Universidade\LEI\3 Ano\LI4\Projeto\FeiraFacil\FeiraFacil\obj\Debug\FeiraFacil.exe
-C:\Users\luis-\Desktop\Universidade\LEI\3 Ano\LI4\Projeto\FeiraFacil\FeiraFacil\obj\Debug\FeiraFacil.pdb

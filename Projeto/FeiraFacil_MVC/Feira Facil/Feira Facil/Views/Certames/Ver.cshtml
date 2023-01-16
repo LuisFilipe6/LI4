@@ -1,0 +1,17 @@
+﻿
+@{
+    ViewData["Title"] = "Details";
+}
+
+
+<h1><center>Lista de Produtos nos Diversos Stands</center></h1>
+
+<div>
+    @foreach (var item in ViewBag.Produtos)
+    {
+        <span>Vendedor: @item.nome;</span>
+    }
+    
+    
+   
+</div>
