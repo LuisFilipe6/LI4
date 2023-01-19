@@ -13,5 +13,9 @@ namespace Feira_Facil.Models
 		public string morada { get; set; }
 		public string contactos { get; set; }
 
+        public string loginUsername { get; set; }
+
+        public string loginPassword { get; set; }
+
 	}
 }

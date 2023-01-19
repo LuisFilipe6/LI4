@@ -8,6 +8,7 @@ namespace Feira_Facil.Models
 
         [Key]
         public int Id { get; set; }
+        //[ForeignKey("IdEmpresa")]
         public int idEmpresa { get; set; }
         public string nome { get; set; }
 		public string contactos { get; set; }

@@ -2,6 +2,8 @@
 
 @{
     ViewData["Title"] = "Create";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+
 }
 
 <h1>Create</h1>
@@ -31,6 +33,16 @@
                 <label asp-for="contactos" class="control-label"></label>
                 <input asp-for="contactos" class="form-control" />
                 <span asp-validation-for="contactos" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="loginUsername" class="control-label"></label>
+                <input asp-for="loginUsername" class="form-control" />
+                <span asp-validation-for="loginUsername" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="loginPassword" class="control-label"></label>
+                <input asp-for="loginPassword" class="form-control" />
+                <span asp-validation-for="loginPassword" class="text-danger"></span>
             </div>
             <div class="form-group">
                 <input type="submit" value="Create" class="btn btn-primary" />

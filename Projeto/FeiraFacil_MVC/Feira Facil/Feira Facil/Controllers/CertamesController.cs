@@ -8,6 +8,8 @@ using Microsoft.EntityFrameworkCore;
 using Feira_Facil.Data;
 using Feira_Facil.Models;
 using System.Configuration;
+using NuGet.Packaging;
+using System.Collections.Specialized;
 
 namespace Feira_Facil.Controllers
 {
@@ -23,7 +25,16 @@ namespace Feira_Facil.Controllers
         // GET: Certames
         public async Task<IActionResult> Index()
         {
-              return View(await _context.Certame.Where(c => c.ativo == 1).ToListAsync());
+            var ret = await _context.Certame.Where(c => c.ativo == 1).ToListAsync();
+            var contaStands = new Dictionary<int, int>();
+
+			foreach (Certame c in ret)
+            {
+                contaStands.Add(c.IdCertame, _context.Stand.Where(s => s.idCertame == c.IdCertame).Count());
+            }
+
+            ViewBag.contaStands = contaStands;
+            return View(ret);
         }
 
 		public async Task<IActionResult> Ver(int? id)
@@ -34,17 +45,17 @@ namespace Feira_Facil.Controllers
 			}
 
             var stands = await _context.Stand.Where(s => s.idCertame == id).ToListAsync();
-            var produtos = new List<Produto>();
-            foreach(Stand s in stands)
-            {
-                produtos.AddRange(await _context.Produto.Where(p => p.idStand == s.IdStand).ToListAsync());
-            }
+            var produtos = new List<String>();
+            ViewBag.Produtos = (await _context.Produto.
+                                Join(_context.Vendedor, p => p.idVendedor,
+                                v => v.Id, (p, v) => new { p, v })
+                                .Join(_context.Stand, s => s.p.idStand,
+                                c => c.IdStand, (s,c) => new { nome = s.p.nome, nome_vendedor = s.v.nome, id_stand = s.p.idStand, id_certame = c.idCertame, imagens = s.p.imagens }).Where(z => z.id_certame == id)
+                                .ToListAsync());
 
 
-            ViewBag.Produtos = produtos;
 
-
-			return View();
+            return View();
 		}
 
 		// GET: Certames/Details/5

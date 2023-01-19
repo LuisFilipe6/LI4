@@ -33,7 +33,7 @@
 							@item.categoraCertame
 						</td>
 						<td>
-							@item.IdCertame
+							@ViewBag.contaStands[item.IdCertame]
 						</td>
 						<td>
 							<a href='@Url.Action("Ver", "Certames", new { id = item.IdCertame })'><button class="btn btn-primary">Aceder</button></a>

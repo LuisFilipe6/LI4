@@ -16,6 +16,34 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = C:\Users\luis-\Desktop\Universidade\LEI\3 Ano\LI4\Projeto\FeiraFacil_MVC\Feira Facil\Feira Facil
 build_property._RazorSourceGeneratorDebug = 
 
+[C:/Users/luis-/Desktop/Universidade/LEI/3 Ano/LI4/Projeto/FeiraFacil_MVC/Feira Facil/Feira Facil/Views/Admin/CriarCertame.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cQ3JpYXJDZXJ0YW1lLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/luis-/Desktop/Universidade/LEI/3 Ano/LI4/Projeto/FeiraFacil_MVC/Feira Facil/Feira Facil/Views/Admin/Dashboard.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cRGFzaGJvYXJkLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/luis-/Desktop/Universidade/LEI/3 Ano/LI4/Projeto/FeiraFacil_MVC/Feira Facil/Feira Facil/Views/Admin/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/luis-/Desktop/Universidade/LEI/3 Ano/LI4/Projeto/FeiraFacil_MVC/Feira Facil/Feira Facil/Views/Admin/Empresas.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cRW1wcmVzYXMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/luis-/Desktop/Universidade/LEI/3 Ano/LI4/Projeto/FeiraFacil_MVC/Feira Facil/Feira Facil/Views/Admin/Feiras.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cRmVpcmFzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/luis-/Desktop/Universidade/LEI/3 Ano/LI4/Projeto/FeiraFacil_MVC/Feira Facil/Feira Facil/Views/Admin/Login.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cTG9naW4uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/luis-/Desktop/Universidade/LEI/3 Ano/LI4/Projeto/FeiraFacil_MVC/Feira Facil/Feira Facil/Views/Admin/Utilizadores.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cVXRpbGl6YWRvcmVzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/luis-/Desktop/Universidade/LEI/3 Ano/LI4/Projeto/FeiraFacil_MVC/Feira Facil/Feira Facil/Views/Certames/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2VydGFtZXNcQ3JlYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
@@ -36,8 +64,20 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2VydGFtZXNcVmVyLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/luis-/Desktop/Universidade/LEI/3 Ano/LI4/Projeto/FeiraFacil_MVC/Feira Facil/Feira Facil/Views/Empresas/AdicionarVendedor.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRW1wcmVzYXNcQWRpY2lvbmFyVmVuZGVkb3IuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/luis-/Desktop/Universidade/LEI/3 Ano/LI4/Projeto/FeiraFacil_MVC/Feira Facil/Feira Facil/Views/Empresas/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRW1wcmVzYXNcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/luis-/Desktop/Universidade/LEI/3 Ano/LI4/Projeto/FeiraFacil_MVC/Feira Facil/Feira Facil/Views/Empresas/CriarStand.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRW1wcmVzYXNcQ3JpYXJTdGFuZC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/luis-/Desktop/Universidade/LEI/3 Ano/LI4/Projeto/FeiraFacil_MVC/Feira Facil/Feira Facil/Views/Empresas/Dashboard.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRW1wcmVzYXNcRGFzaGJvYXJkLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/luis-/Desktop/Universidade/LEI/3 Ano/LI4/Projeto/FeiraFacil_MVC/Feira Facil/Feira Facil/Views/Empresas/Delete.cshtml]
@@ -52,16 +92,20 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRW1wcmVzYXNcRWRpdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/luis-/Desktop/Universidade/LEI/3 Ano/LI4/Projeto/FeiraFacil_MVC/Feira Facil/Feira Facil/Views/Empresas/GerirStand.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRW1wcmVzYXNcR2VyaXJTdGFuZC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/luis-/Desktop/Universidade/LEI/3 Ano/LI4/Projeto/FeiraFacil_MVC/Feira Facil/Feira Facil/Views/Empresas/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRW1wcmVzYXNcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/luis-/Desktop/Universidade/LEI/3 Ano/LI4/Projeto/FeiraFacil_MVC/Feira Facil/Feira Facil/Views/Home/Admin.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxBZG1pbi5jc2h0bWw=
+[C:/Users/luis-/Desktop/Universidade/LEI/3 Ano/LI4/Projeto/FeiraFacil_MVC/Feira Facil/Feira Facil/Views/Empresas/Login.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRW1wcmVzYXNcTG9naW4uY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/luis-/Desktop/Universidade/LEI/3 Ano/LI4/Projeto/FeiraFacil_MVC/Feira Facil/Feira Facil/Views/Home/Feiras.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxGZWlyYXMuY3NodG1s
+[C:/Users/luis-/Desktop/Universidade/LEI/3 Ano/LI4/Projeto/FeiraFacil_MVC/Feira Facil/Feira Facil/Views/Home/Admin.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxBZG1pbi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/luis-/Desktop/Universidade/LEI/3 Ano/LI4/Projeto/FeiraFacil_MVC/Feira Facil/Feira Facil/Views/Home/Index.cshtml]
@@ -88,8 +132,8 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHV0b3NcRWRpdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/luis-/Desktop/Universidade/LEI/3 Ano/LI4/Projeto/FeiraFacil_MVC/Feira Facil/Feira Facil/Views/Produtos/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHV0b3NcSW5kZXguY3NodG1s
+[C:/Users/luis-/Desktop/Universidade/LEI/3 Ano/LI4/Projeto/FeiraFacil_MVC/Feira Facil/Feira Facil/Views/Produtos/List.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHV0b3NcTGlzdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/luis-/Desktop/Universidade/LEI/3 Ano/LI4/Projeto/FeiraFacil_MVC/Feira Facil/Feira Facil/Views/Shared/Error.cshtml]
@@ -144,10 +188,6 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlcnNcRWRpdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/luis-/Desktop/Universidade/LEI/3 Ano/LI4/Projeto/FeiraFacil_MVC/Feira Facil/Feira Facil/Views/Users/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlcnNcSW5kZXguY3NodG1s
-build_metadata.AdditionalFiles.CssScope = 
-
 [C:/Users/luis-/Desktop/Universidade/LEI/3 Ano/LI4/Projeto/FeiraFacil_MVC/Feira Facil/Feira Facil/Views/Users/Login.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlcnNcTG9naW4uY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
@@ -156,24 +196,40 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlcnNcUmVnaXN0ZXIuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/luis-/Desktop/Universidade/LEI/3 Ano/LI4/Projeto/FeiraFacil_MVC/Feira Facil/Feira Facil/Views/Vendedors/Create.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVmVuZGVkb3JzXENyZWF0ZS5jc2h0bWw=
+[C:/Users/luis-/Desktop/Universidade/LEI/3 Ano/LI4/Projeto/FeiraFacil_MVC/Feira Facil/Feira Facil/Views/Users/Utilizadores.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlcnNcVXRpbGl6YWRvcmVzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/luis-/Desktop/Universidade/LEI/3 Ano/LI4/Projeto/FeiraFacil_MVC/Feira Facil/Feira Facil/Views/Vendedors/Delete.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVmVuZGVkb3JzXERlbGV0ZS5jc2h0bWw=
+[C:/Users/luis-/Desktop/Universidade/LEI/3 Ano/LI4/Projeto/FeiraFacil_MVC/Feira Facil/Feira Facil/Views/Vendedores/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVmVuZGVkb3Jlc1xDcmVhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/luis-/Desktop/Universidade/LEI/3 Ano/LI4/Projeto/FeiraFacil_MVC/Feira Facil/Feira Facil/Views/Vendedors/Details.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVmVuZGVkb3JzXERldGFpbHMuY3NodG1s
+[C:/Users/luis-/Desktop/Universidade/LEI/3 Ano/LI4/Projeto/FeiraFacil_MVC/Feira Facil/Feira Facil/Views/Vendedores/Dashboard.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVmVuZGVkb3Jlc1xEYXNoYm9hcmQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/luis-/Desktop/Universidade/LEI/3 Ano/LI4/Projeto/FeiraFacil_MVC/Feira Facil/Feira Facil/Views/Vendedors/Edit.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVmVuZGVkb3JzXEVkaXQuY3NodG1s
+[C:/Users/luis-/Desktop/Universidade/LEI/3 Ano/LI4/Projeto/FeiraFacil_MVC/Feira Facil/Feira Facil/Views/Vendedores/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVmVuZGVkb3Jlc1xEZWxldGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/luis-/Desktop/Universidade/LEI/3 Ano/LI4/Projeto/FeiraFacil_MVC/Feira Facil/Feira Facil/Views/Vendedors/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVmVuZGVkb3JzXEluZGV4LmNzaHRtbA==
+[C:/Users/luis-/Desktop/Universidade/LEI/3 Ano/LI4/Projeto/FeiraFacil_MVC/Feira Facil/Feira Facil/Views/Vendedores/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVmVuZGVkb3Jlc1xEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/luis-/Desktop/Universidade/LEI/3 Ano/LI4/Projeto/FeiraFacil_MVC/Feira Facil/Feira Facil/Views/Vendedores/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVmVuZGVkb3Jlc1xFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/luis-/Desktop/Universidade/LEI/3 Ano/LI4/Projeto/FeiraFacil_MVC/Feira Facil/Feira Facil/Views/Vendedores/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVmVuZGVkb3Jlc1xJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/luis-/Desktop/Universidade/LEI/3 Ano/LI4/Projeto/FeiraFacil_MVC/Feira Facil/Feira Facil/Views/Vendedores/Login.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVmVuZGVkb3Jlc1xMb2dpbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/luis-/Desktop/Universidade/LEI/3 Ano/LI4/Projeto/FeiraFacil_MVC/Feira Facil/Feira Facil/Views/Vendedores/Stands.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVmVuZGVkb3Jlc1xTdGFuZHMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/luis-/Desktop/Universidade/LEI/3 Ano/LI4/Projeto/FeiraFacil_MVC/Feira Facil/Feira Facil/Views/_ViewImports.cshtml]
@@ -184,6 +240,14 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/luis-/Desktop/Universidade/LEI/3 Ano/LI4/Projeto/FeiraFacil_MVC/Feira Facil/Feira Facil/Views/Shared/_AdminLayout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9BZG1pbkxheW91dC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = b-niw9dag45s
+
+[C:/Users/luis-/Desktop/Universidade/LEI/3 Ano/LI4/Projeto/FeiraFacil_MVC/Feira Facil/Feira Facil/Views/Shared/_EmpresaLayout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9FbXByZXNhTGF5b3V0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = b-td17jctb0o
+
 [C:/Users/luis-/Desktop/Universidade/LEI/3 Ano/LI4/Projeto/FeiraFacil_MVC/Feira Facil/Feira Facil/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-rz1n98et1g
@@ -191,3 +255,7 @@ build_metadata.AdditionalFiles.CssScope = b-rz1n98et1g
 [C:/Users/luis-/Desktop/Universidade/LEI/3 Ano/LI4/Projeto/FeiraFacil_MVC/Feira Facil/Feira Facil/Views/Shared/_UserLayout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9Vc2VyTGF5b3V0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = b-x2duoa6tei
+
+[C:/Users/luis-/Desktop/Universidade/LEI/3 Ano/LI4/Projeto/FeiraFacil_MVC/Feira Facil/Feira Facil/Views/Shared/_VendedoresLayout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WZW5kZWRvcmVzTGF5b3V0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = b-8kgelo259i

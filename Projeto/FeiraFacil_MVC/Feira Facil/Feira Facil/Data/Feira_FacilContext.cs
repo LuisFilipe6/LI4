@@ -25,5 +25,8 @@ namespace Feira_Facil.Data
         public DbSet<Feira_Facil.Models.Stand> Stand { get; set; }
 
         public DbSet<Feira_Facil.Models.Vendedor> Vendedor { get; set; }
-    }
+
+		public DbSet<Feira_Facil.Models.Admin> Admin { get; set; }
+
+	}
 }

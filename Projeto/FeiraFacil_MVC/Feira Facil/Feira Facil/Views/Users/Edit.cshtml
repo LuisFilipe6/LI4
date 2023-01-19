@@ -2,6 +2,8 @@
 
 @{
     ViewData["Title"] = "Edit";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+
 }
 
 <h1>Edit</h1>
@@ -39,6 +41,21 @@
                 <span asp-validation-for="phone" class="text-danger"></span>
             </div>
             <div class="form-group">
+                <label asp-for="nif" class="control-label"></label>
+                <input asp-for="nif" class="form-control" />
+                <span asp-validation-for="nif" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="iban" class="control-label"></label>
+                <input asp-for="iban" class="form-control" />
+                <span asp-validation-for="iban" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="morada" class="control-label"></label>
+                <input asp-for="morada" class="form-control" />
+                <span asp-validation-for="morada" class="text-danger"></span>
+            </div>
+            <div class="form-group">
                 <input type="submit" value="Save" class="btn btn-primary" />
             </div>
         </form>
@@ -46,7 +63,7 @@
 </div>
 
 <div>
-    <a asp-action="Index">Back to List</a>
+    <a asp-action="Utilizadores" asp-controller="Admin">Back to List</a>
 </div>
 
 @section Scripts {

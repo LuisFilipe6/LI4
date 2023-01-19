@@ -21,6 +21,31 @@ namespace Feira_Facil.Migrations
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder, 1L, 1);
 
+            modelBuilder.Entity("Feira_Facil.Models.Admin", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
+
+                    b.Property<string>("email")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("nome")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("password")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Admin");
+                });
+
             modelBuilder.Entity("Feira_Facil.Models.Certame", b =>
                 {
                     b.Property<int>("IdCertame")
@@ -53,6 +78,14 @@ namespace Feira_Facil.Migrations
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("IdEmpresa"), 1L, 1);
 
                     b.Property<string>("contactos")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("loginPassword")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("loginUsername")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
@@ -96,6 +129,9 @@ namespace Feira_Facil.Migrations
 
                     b.Property<double>("preco")
                         .HasColumnType("float");
+
+                    b.Property<int>("stock")
+                        .HasColumnType("int");
 
                     b.HasKey("IdProduto");
 

@@ -54,13 +54,13 @@ namespace Feira_Facil.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("Id,email,password,firstName,lastName,phone,loginToken")] User user)
+        public async Task<IActionResult> Create([Bind("Id,email,password,firstName,lastName,phone,nif,iban,morada")] User user)
         {
             if (ModelState.IsValid)
             {
                 _context.Add(user);
                 await _context.SaveChangesAsync();
-                return RedirectToAction(nameof(Index));
+                return RedirectToAction("Utilizadores", "Admin");
             }
             return View(user);
         }
@@ -68,6 +68,9 @@ namespace Feira_Facil.Controllers
         // GET: Users/Edit/5
         public async Task<IActionResult> Edit(int? id)
         {
+            if (HttpContext.Session.GetString("AdminLogin") == null)
+                return RedirectToAction("Login", "Admin");
+
             if (id == null || _context.User == null)
             {
                 return NotFound();
@@ -86,7 +89,7 @@ namespace Feira_Facil.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("Id,email,password,firstName,lastName,phone,loginToken")] User user)
+        public async Task<IActionResult> Edit(int id, [Bind("Id,email,password,firstName,lastName,phone,nif,iban,morada")] User user)
         {
             if (id != user.Id)
             {
@@ -111,7 +114,7 @@ namespace Feira_Facil.Controllers
                         throw;
                     }
                 }
-                return RedirectToAction(nameof(Index));
+                return RedirectToAction("Utilizadores", "Admin");
             }
             return View(user);
         }
@@ -119,26 +122,9 @@ namespace Feira_Facil.Controllers
         // GET: Users/Delete/5
         public async Task<IActionResult> Delete(int? id)
         {
-            if (id == null || _context.User == null)
-            {
-                return NotFound();
-            }
+            if (HttpContext.Session.GetString("AdminLogin") == null)
+                return RedirectToAction("Login", "Admin");
 
-            var user = await _context.User
-                .FirstOrDefaultAsync(m => m.Id == id);
-            if (user == null)
-            {
-                return NotFound();
-            }
-
-            return View(user);
-        }
-
-        // POST: Users/Delete/5
-        [HttpPost, ActionName("Delete")]
-        [ValidateAntiForgeryToken]
-        public async Task<IActionResult> DeleteConfirmed(int id)
-        {
             if (_context.User == null)
             {
                 return Problem("Entity set 'Feira_FacilContext.User'  is null.");
@@ -148,10 +134,12 @@ namespace Feira_Facil.Controllers
             {
                 _context.User.Remove(user);
             }
-            
+
             await _context.SaveChangesAsync();
-            return RedirectToAction(nameof(Index));
+            return RedirectToAction("Utilizadores", "Admin");
         }
+
+
 
         private bool UserExists(int id)
         {
@@ -161,11 +149,12 @@ namespace Feira_Facil.Controllers
         /* GETs */
         public IActionResult Login()
         {
-            //Verifica se o utiizador já está ligado
-            if(HttpContext.Session.GetString("User") != null)
+			ViewBag.Error = false;
+
+			//Verifica se o utiizador já está ligado
+			if (HttpContext.Session.GetString("User") != null)
                 return RedirectToAction("Dashboard");
 
-            ViewBag.Error = false;
             return View();
         }
 

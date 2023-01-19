@@ -20,9 +20,9 @@ namespace Feira_Facil.Controllers
         }
 
         // GET: Produtoes
-        public async Task<IActionResult> Index()
+        public async Task<IActionResult> List(int? id)
         {
-              return View(await _context.Produto.ToListAsync());
+              return View(await _context.Produto.Where(p => p.idStand == id).ToListAsync());
         }
 
         // GET: Produtoes/Details/5
@@ -44,8 +44,20 @@ namespace Feira_Facil.Controllers
         }
 
         // GET: Produtoes/Create
-        public IActionResult Create()
+        public async Task<IActionResult> Create(int? id)
         {
+            if (HttpContext.Session.GetString("VendedorLogin") == null)
+                return RedirectToAction("Login", "Vendedores");
+            if(id == null)
+            {
+                return NotFound();
+            }
+
+            String vendedor = HttpContext.Session.GetString("VendedorLogin");
+            String[] paramsVendedor = vendedor.Split(",");
+            Console.Write(id);
+            ViewBag.IdStand = id;
+            ViewBag.Id_Vendedor = paramsVendedor[0];
             return View();
         }
 
@@ -54,13 +66,15 @@ namespace Feira_Facil.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("IdProduto,idVendedor,idStand,preco,imagens")] Produto produto)
+        public async Task<IActionResult> Create([Bind("IdProduto,idVendedor,idStand,preco,imagens,nome,stock")] Produto produto)
         {
+            if (HttpContext.Session.GetString("VendedorLogin") == null)
+                return RedirectToAction("Login", "Vendedores");
             if (ModelState.IsValid)
             {
                 _context.Add(produto);
                 await _context.SaveChangesAsync();
-                return RedirectToAction(nameof(Index));
+                return RedirectToAction("Stands", "Vendedores");
             }
             return View(produto);
         }
@@ -68,6 +82,8 @@ namespace Feira_Facil.Controllers
         // GET: Produtoes/Edit/5
         public async Task<IActionResult> Edit(int? id)
         {
+            if (HttpContext.Session.GetString("VendedorLogin") == null)
+                return RedirectToAction("Login", "Vendedores");
             if (id == null || _context.Produto == null)
             {
                 return NotFound();
@@ -88,6 +104,8 @@ namespace Feira_Facil.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Edit(int id, [Bind("IdProduto,idVendedor,idStand,preco,imagens")] Produto produto)
         {
+            if (HttpContext.Session.GetString("VendedorLogin") == null)
+                return RedirectToAction("Login", "Vendedores");
             if (id != produto.IdProduto)
             {
                 return NotFound();
@@ -119,26 +137,8 @@ namespace Feira_Facil.Controllers
         // GET: Produtoes/Delete/5
         public async Task<IActionResult> Delete(int? id)
         {
-            if (id == null || _context.Produto == null)
-            {
-                return NotFound();
-            }
-
-            var produto = await _context.Produto
-                .FirstOrDefaultAsync(m => m.IdProduto == id);
-            if (produto == null)
-            {
-                return NotFound();
-            }
-
-            return View(produto);
-        }
-
-        // POST: Produtoes/Delete/5
-        [HttpPost, ActionName("Delete")]
-        [ValidateAntiForgeryToken]
-        public async Task<IActionResult> DeleteConfirmed(int id)
-        {
+            if (HttpContext.Session.GetString("VendedorLogin") == null)
+                return RedirectToAction("Login", "Vendedores");
             if (_context.Produto == null)
             {
                 return Problem("Entity set 'Feira_FacilContext.Produto'  is null.");
@@ -148,10 +148,12 @@ namespace Feira_Facil.Controllers
             {
                 _context.Produto.Remove(produto);
             }
-            
+
             await _context.SaveChangesAsync();
-            return RedirectToAction(nameof(Index));
+            return RedirectToAction("Stands", "Vendedores");
         }
+
+
 
         private bool ProdutoExists(int id)
         {
